@@ -1,0 +1,148 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+li, a, button {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 9.2%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navlink {
+    list-style: none;
+}
+
+    .navlink li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+        .navlink li a {
+            transition: all 0.3s ease 0s;
+        }
+
+            .navlink li a:hover {
+                color: rgba(0,136,169,1);
+            }
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+    button:hover {
+        background-color: rgba(0,136,169,0.8);
+    }
+
+
+
+
+/*blogpost css from here*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    
+}
+
+.square:hover {
+    transform: scale(1.01); 
+}
+
+
+.square {
+    width: 80vw;
+    height: 25vw;
+    background: #edf0f1;
+    border-radius: 4px;
+    transition: transform .2s; /* Animation */
+}
+
+.mask {
+    clip: auto;
+    border-radius: 4px;
+    position: absolute;
+    max-width: 40vw;
+    height: 23vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+
+
+.textfeld {
+    font-family: 'Montserrat', Arial;
+    float: right;
+    width: 36vw;
+    height: 25vw;
+    background-color: #edf0f1;
+    text-align:center;
+    padding: 1vw 3vw;
+    font-size: 1vw;
+}
+
+@media (max-width: 1200px){
+    .square{
+        height: 125vw;
+    }
+    .mask {
+        max-width: 78vw;
+        height: 46vw;
+    }
+    
+    .textfeld {
+        font-size: 3vw;
+        float: none;
+        text-align: center;
+        width: 80vw;
+        height: 10vw;
+        padding: 1vw 2vw;
+        margin-top:47vw;
+        margin-bottom: 1vw;
+        
+    }
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 10%;
+    }
+}
+.overlay {
+    width: min(10vw, 150px);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 30px 5px;
+    min-width: 55px;
+}
+
